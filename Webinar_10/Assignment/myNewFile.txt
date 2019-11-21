@@ -1,0 +1,6 @@
+cows: 2
+dogs: 2
+rats: 1
+monkey: 1
+rabbit: 3
+parrot: 1

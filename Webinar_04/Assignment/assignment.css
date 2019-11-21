@@ -1,0 +1,26 @@
+ol > li {
+    color: blueviolet;
+}
+ol ol >li { 
+    color: palevioletred;
+    font-style: italic;
+}
+ol ol ol >li {
+    color: aqua;
+    font-weight: bold;
+}
+
+ol ol{
+    display: none;
+}
+ol ol ol>li{
+    display: none;
+}
+ol li:hover ol{
+
+    display: block;
+}
+
+ol ol > li:hover ol>li{
+    display: block;
+}

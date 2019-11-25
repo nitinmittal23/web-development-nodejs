@@ -9,12 +9,12 @@ const connection = mysql.createConnection({
 
 connection.query(
     `SELECT * FROM persons`,
-    function(err,rows, fields){
+    function(err,rows, columns){
         if (err) {
             console.error(err)
         } else {
             console.log(rows)
-            //console.log(fields) fields is the columns..
+            //console.log(columns) columns is the columns..
         }
         connection.close();
     }

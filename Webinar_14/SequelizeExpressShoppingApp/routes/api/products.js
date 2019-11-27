@@ -9,20 +9,29 @@ route.get('/', (req,res)=>{
         })
         .catch((err)=>{
             res.status(500).send({
-                error: "could not retrive users"
+                error: "could not retrieve products"
             })
         })
 })
 
 route.post('/', (req,res)=>{
+    //validate the values
+    if (isNaN(req.body.price)){
+        return res.status(403).send({
+            error: "Price is not valid number"
+        })
+    }
+
     //Add a new product
-    User.create({
-        name: req.body.name
-    }).then((user)=>{
-        res.status(201).send(user)
+    Product.create({
+        name: req.body.name,
+        manufacturer: req.body.manufacturer,
+        price: parseFloat(req.body.price)
+    }).then((product)=>{
+        res.status(201).send(product)
     }).catch((err)=>{
         res.status(501).send({
-            error: "could not add new user"
+            error: "Error adding product"
         })
     })
 })

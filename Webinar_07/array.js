@@ -2,16 +2,16 @@
 // console.log(arr.length)
 // console.log(arr[0])
 
-// let arr2 = [1,2,3,'hello', false, [2,3], {a : 10}]
+let arr2 = [1,2,3,'hello', false, [2,3], {a : 10}]
 // console.log(arr2)
 
 // for (let i=0;i<arr2.length;i++){
 //     console.log(arr2[i])
 // }
 
-// for(let val of arr2){
-//     console.log(val)
-// }
+for(let val of arr2){
+    console.log(val)
+}
 
 // for (let index in arr2){
 //     console.log(arr2[index])
@@ -26,7 +26,7 @@
 
 // console.log(fruits)
 
-// //shgift and unshift 
+// //shift and unshift 
 // fruits.shift();
 // console.log(fruits)
 

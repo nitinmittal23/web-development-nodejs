@@ -1,5 +1,5 @@
 const Product = require('../../db').Product
-const route = require('express').Router()
+const route = require('express').Router();
 
 route.get('/',(req,res)=>{
     //get all products

@@ -26,4 +26,5 @@ app.get('/rate', (req,res)=> {
     res.send(fareUtils.rate)
 })
 
-app.listen(2222, () => console.log ('server started on http://localhost:2222'))
+exports = module.exports = app
+//app.listen(2222, () => console.log ('server started on http://localhost:2222'))

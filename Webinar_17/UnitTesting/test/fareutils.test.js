@@ -16,4 +16,9 @@ describe('fareUtils', function(){
         expect(fare).to.equal(100)
     })
 
+    it('expect fare to be 56 for 2Km, 18min', () => {
+        let fare = fareUtils.calcFare(2,18)
+        expect(fare).to.equal(56)
+    })
+
 })
